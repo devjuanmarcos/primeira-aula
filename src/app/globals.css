@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --var-text: 0, 0, 0;
+    --var-accessibility-header-bg: 220, 226, 226;
+    --var-accessibility-header-icon: 56, 56, 56;
+
+    /* Brand Figma Colors */
+    --var-brand-50: 240, 249, 255;
+    --var-brand-100: 224, 242, 254;
+    --var-brand-200: 185, 229, 254;
+    --var-brand-300: 54, 187, 250;
+    --var-brand-400: 12, 163, 235;
+    --var-brand-500: 0, 132, 204;
+    --var-brand-600: 11, 73, 111;
+
+    --var-text-primary: 52, 52, 52;
+    --var-text-secundary: 84, 84, 84;
+  }
+
+  [data-theme="dark"] {
+    --var-text: 0, 0, 0;
+    --var-accessibility-header-bg: 56, 56, 56;
+    --var-accessibility-header-icon: 255, 255, 255;
+
+    /* Brand Figma Colors */
+    --var-brand-50: 240, 249, 255;
+    --var-brand-100: 224, 242, 254;
+    --var-brand-200: 185, 229, 254;
+    --var-brand-300: 54, 187, 250;
+    --var-brand-400: 12, 163, 235;
+    --var-brand-500: 0, 132, 204;
+    --var-brand-600: 11, 73, 111;
+
+    --var-text-primary: 255, 255, 255;
+    --var-text-secundary: 255, 255, 255;
+  }
+
+  [data-theme="contrast"] {
+    --var-text: 0, 0, 0;
+    --var-accessibility-header-bg: 0, 0, 0;
+    --var-accessibility-header-icon: 255, 255, 255;
+  }
+
+  [data-theme="monochrome"] {
+    --var-text: 0, 0, 0;
+    --var-accessibility-header-bg: 0, 0, 0;
+    --var-accessibility-header-icon: 255, 255, 255;
+  }
+
+  * {
+    -webkit-transition: background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    -ms-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+  }
+
+  .title-h1 {
+    font-family: var(--font-epilogue);
+    color: rgb(var(--var-text-primary));
+    font-size: 2.875rem;
+    line-height: 4rem;
+  }
+
+  .title-h1-bold {
+    font-family: var(--font-epilogue);
+    color: rgb(var(--var-text-primary));
+    font-weight: bold;
+    font-size: 2.875rem;
+    line-height: 4rem;
+  }
+
+  .top-title {
+    font-family: var(--font-epilogue);
+    color: rgb(var(--var-brand-400));
+    font-size: 1rem;
+    line-height: 2.625rem;
+    font-weight: 500;
+  }
+
+  .banner-paragraph {
+    font-family: var(--font-lato);
+    color: rgb(var(--var-text-secundary));
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
+
+  .title-card {
+    font-family: var(--font-epilogue);
+    color: rgb(var(--var-text-primary));
+    font-weight: 500;
+    font-size: 1.375rem;
+    line-height: 1.75rem;
+  }
+
+  .title-mini-card {
+    font-family: var(--font-epilogue);
+    color: rgb(var(--var-text-primary));
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .banner-card {
+    font-family: var(--font-lato);
+    color: rgb(var(--var-text-secundary));
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+
+  .cta {
+    font-family: var(--font-lato);
+    font-size: 0.875rem;
+    color: rgb(var(--var-brand-400));
+    text-decoration: underline;
+  }
+
+  body {
+    color: rgb(var(--var-text));
+    background-color: rgb(var(--var-residencia-background));
+    font-family: var(--font-epilogue);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+main {
+  padding-inline: 100px;
+}
+
+@media (max-width: 1024px) {
+  main {
+    padding-inline: 20px;
+  }
+}
